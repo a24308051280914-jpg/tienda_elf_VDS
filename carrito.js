@@ -51,7 +51,6 @@ function mostrarCarrito() {
     });
     html += '</div>';
     html += `<p class="total-carrito">Total: $${total.toFixed(2)} MXN</p>`;
-    html += '<p>Este carrito es una demostración. No se realiza ningún pago ni se guarda una compra en SQL.</p>';
     html += '<button class="boton-comprar" type="button" onclick="vaciarCarrito()">Vaciar carrito</button>';
     contenedor.innerHTML = html;
 }
