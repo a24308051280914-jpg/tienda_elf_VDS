@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS tienda_elf CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE tienda_elf;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(150) NOT NULL UNIQUE,
+    contrasena VARCHAR(255) NOT NULL
+);
